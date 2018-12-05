@@ -1,0 +1,91 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/mainBack.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: Georgia, Helvetica, Arial;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1, .top-part, .center-part, .bottom-part {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #0c9;
+  font-size: calc(14px + (33 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.center-part {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.myPhoto {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.center-txt {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.mainBtn {
+  width: 40%;
+  text-align: center;
+  color: white;
+  background-color: #0c9;
+  border-radius: 4px;
+  font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.bottom-part {
+  padding-top: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+.emailTxt {
+  position: relative;
+  bottom: 1.3vw;
+  color: white;
+  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.btIcon {
+  height: 3.5vw;
+  width: 3.5vw;
+}
+
+@media screen and (max-width: 950px) {
+  .btIcon {
+    height: 7vw;
+    width: 7vw;
+  }
+  .emailTxt {
+    bottom: 2.3vw;
+  }
+  .myPhoto {
+    width: 20%;
+  }
+}
